@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(fonts/Roboto_Mono.ttf);
+}
+
+.app {
+  font-family: "Roboto";
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,32 @@
+.backgrnd {
+  background-image: url("../images/sunsetBack.png");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.leftContainer {
+  background-color: white;
+  width: 728px;
+  height: 620px;
+  margin-left: 90px;
+  margin-top: 120px;
+  margin-bottom: 110px;
+  display: flex;
+  justify-content: center;
+}
+
+.textContainer {
+  display: flex;
+  background-color: #322e2e;
+  width: 575px;
+  height: 455px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-left: 40px;
+  border-radius: 61px;
+  justify-content: center;
+  color: white;
+}
+
+.navColumn {
+}

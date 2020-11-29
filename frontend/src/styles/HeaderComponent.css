@@ -1,0 +1,26 @@
+
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navBar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: right;
+    
+
+}
+
+.navBar li {
+    margin-right: 99px;
+    margin-top: 60px;
+    font-size: 30px;
+    color: black !important;
+    /* font-style: 'Roboto Mono'; */
+}
+
+a{
+    text-decoration: 2px underline black
+}
