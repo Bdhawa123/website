@@ -1,0 +1,122 @@
+.temp {
+  margin-top: 150px;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #7d7373;
+}
+
+.title {
+  align-self: start;
+  margin-left: 85px;
+  font-weight: 500;
+  font-size: 34px;
+  margin-bottom: -30px;
+  -webkit-text-stroke: 1px #a59e9e;
+  -webkit-text-fill-color: #7d7373;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.content1 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.logo {
+  width: 254px;
+  height: 129px;
+  margin-left: 145px;
+}
+
+.uni {
+  font-size: 34px;
+  /* color: #7d7373; */
+  margin-left: -50px;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.line1 {
+  margin-top: 25px;
+  margin-left: 25px;
+  height: 5px;
+  width: 1150px;
+  background-color: #7d7373;
+}
+
+.line2 {
+  background-color: #7d7373;
+  height: 750px;
+  width: 5px;
+  position: relative;
+  top: -115px;
+  right: -65px;
+}
+
+.content2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-self: flex-start;
+}
+
+.major {
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.degree {
+  font-size: 24px;
+  margin-left: 90px;
+}
+
+.course_content {
+  margin-top: 40px;
+  margin-left: 80px;
+  background-color: #7d7373;
+  width: 610px;
+  height: 5px;
+}
+
+.down {
+  position: absolute;
+  left: 375px;
+  margin-top: -15px;
+  width: 30px;
+}
+
+.content3 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.logo_code {
+  width: 240px;
+  height: 200px;
+}
+
+.customBtn {
+  width: 200px;
+  height: 80px;
+  border: 5px solid #7d7373;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -60px;
+  border-radius: 52px;
+}

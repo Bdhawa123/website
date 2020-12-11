@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 900px;
 }
 .leftContainer {
   position: relative;
@@ -18,7 +19,7 @@
 
 .imgDiv {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: column;
 }
 

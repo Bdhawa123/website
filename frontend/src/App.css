@@ -5,6 +5,7 @@
 
 .app {
   font-family: "Roboto";
+  min-width: 1050px;
 }
 
 @keyframes App-logo-spin {
