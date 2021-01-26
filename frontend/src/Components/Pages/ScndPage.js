@@ -3,7 +3,6 @@ import "../../styles/ScndPage.css";
 import profile_pic from "../../images/profile_pic.png";
 
 const ScndPage = () => {
-  console.log("Something");
   return (
     <div className="backgrnd">
       <div className="leftContainer">

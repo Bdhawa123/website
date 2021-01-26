@@ -3,6 +3,8 @@ import WebsiteComponent from "./Components/WebsiteComponent";
 import Container from "react-bootstrap/Container";
 import "./App.css";
 
+/* global gapi */
+
 function App() {
   return (
     <Container>
