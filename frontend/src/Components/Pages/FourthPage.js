@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "../../styles/FourthPage.css";
 import { CloudinaryContext, Transformation, Image } from "cloudinary-react";
 
 const FourthPage = () => {
@@ -7,7 +8,9 @@ const FourthPage = () => {
 
   useEffect(() => {
     axios
-      .get("http://res.cloudinary.com/classic-euphemist/image/list/IOT.json")
+      .get(
+        "http://res.cloudinary.com/classic-euphemist/image/list/gallery.json"
+      )
       .then((res) => {
         console.log(res.data.resources);
         setProject(res.data.resources);
@@ -15,28 +18,28 @@ const FourthPage = () => {
   }, []);
 
   return (
-    <div className="gallery">
-      <CloudinaryContext cloudName="classic-euphemist">
-        {Project.map((data) => {
-          console.log(data);
-          return (
-            <div key={`${data.public_id}.jpg`}>
-              {/* <img
-                src={`https://res.cloudinary.com/classic-euphemist/image/upload/${data.public_id}.jpg`}
-              /> */}
-              <Image publicId={data.publicId}>
-                <Transformation
-                  crop="scale"
-                  width="300"
-                  height="200"
-                  dpr="auto"
-                  responsive_placeholder="blank"
-                />
-              </Image>
-            </div>
-          );
-        })}
-      </CloudinaryContext>
+    <div className="main_container">
+      <div className="Title">PHOTOGRAPHY</div>
+      <div className="glass_pane">
+        <div className="gallery">
+          <CloudinaryContext
+            cloudName="classic-euphemist"
+            className="photo_gallery"
+          >
+            {Project.map((data) => {
+              console.log(data);
+              return (
+                <div key={`${data.public_id}.jpg `}>
+                  <img
+                    alt={data.version}
+                    src={`https://res.cloudinary.com/classic-euphemist/image/upload/${data.public_id}.jpg`}
+                  />
+                </div>
+              );
+            })}
+          </CloudinaryContext>
+        </div>
+      </div>
     </div>
   );
 };
