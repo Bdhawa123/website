@@ -1,10 +1,14 @@
+.main_container {
+  position: relative;
+  top: -7em;
+}
+
 .photo_gallery img {
-  width: 19rem;
+  width: 20rem;
   height: 14em;
   transition: all 0.5s;
   margin-top: 1em;
   margin-left: 1em;
-  z-index: 2;
 }
 
 .photo_gallery img:hover {
@@ -24,7 +28,6 @@
   flex-wrap: wrap;
   overflow-y: scroll;
   scrollbar-width: none;
-  z-index: 1;
 }
 .photo_gallery::-webkit-scrollbar {
   display: none;
@@ -35,20 +38,29 @@
   justify-content: center;
 }
 
-.glass_pane {
+.gallery_container {
+  position: relative;
+  top: -25px;
   opacity: 0.5;
   filter: blur(3px);
+  transition: all 1s;
 }
 
 .Title {
   font-size: 41px;
   position: absolute;
   display: flex;
-  left: 9em;
-  top: 9em;
-  color: aliceblue;
+  left: 9.5em;
+  top: 8em;
+  color: white;
+  z-index: 3;
+  transition: all 0.5s;
 }
 
-.main_container {
-  position: relative;
+.gallery_container:hover {
+  filter: blur(0px);
+  opacity: 1;
+}
+.gallery_container:hover + .Title {
+  opacity: 0;
 }
