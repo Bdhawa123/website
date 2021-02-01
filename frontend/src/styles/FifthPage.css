@@ -1,0 +1,83 @@
+.portfolioContainer {
+  display: flex;
+  background: url("./../images/background.jpg");
+  background-size: cover;
+  height: 900px;
+  width: 100%;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.portfolio {
+  background-color: white;
+  border-radius: 40px;
+  height: 809px;
+  margin-top: 55px;
+  margin-left: 50px;
+  margin-right: 47px;
+}
+
+.portfolioTitle {
+  display: flex;
+  font-weight: 400;
+  font-size: 37px;
+  color: #7d7373;
+  justify-content: flex-start;
+  margin-left: 45px;
+  margin-top: 30px;
+}
+
+.universityProjects {
+  display: flex;
+  flex-direction: column;
+  background-color: #7d7373;
+  margin: 35px;
+  height: 250px;
+}
+
+.uniTextDes {
+  background-color: white;
+  color: #7d7373;
+  width: 115px;
+  margin-left: 25px;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+.horizontal_scroll {
+  position: absolute;
+  width: 600px;
+  height: 870px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-600px);
+  transform-origin: right top;
+  scrollbar-width: none;
+}
+
+.horizontal_scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal_scroll > div {
+  /* width: 100px; */
+  height: 290px;
+  transform: rotate(90deg);
+  transform-origin: right top;
+  margin-right: 35px;
+}
+
+.folderImg {
+  height: 170px;
+  width: 240px;
+  margin-left: 600px; /* should be image width * n(no of repititons)*/
+}
+
+.ProjectDesc {
+  position: relative;
+  top: -140px;
+  left: 96px;
+  margin-left: 600px;
+}
+
+/* Second Part of the React Project !!! */
