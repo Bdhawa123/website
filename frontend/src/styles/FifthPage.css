@@ -81,3 +81,15 @@
 }
 
 /* Second Part of the React Project !!! */
+.reactProjectDesc {
+  background-color: white;
+  color: #7d7373;
+  width: 150px;
+  margin-left: 25px;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+.xtra_spacing {
+  margin-top: 85px;
+}

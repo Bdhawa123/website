@@ -1,0 +1,45 @@
+.titleMoviePage {
+  display: flex;
+  font-weight: 400;
+  font-size: 37px;
+  color: #7d7373;
+  justify-content: flex-start;
+  margin-left: 45px;
+  margin-top: 75px;
+}
+
+.movieContainer {
+  display: flex;
+  height: 900px;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+  align-self: stretch;
+}
+
+.movieCard {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  display: flex;
+  height: 600px;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 50px;
+  transition: all 0.5s;
+  box-shadow: 4px 4px 15px 2px rgba(#0000, 0.75);
+}
+
+.movieCard:not(:first-child) {
+  margin-left: -8rem;
+}
+
+.movieCard:hover {
+  transform: translateY(-1rem);
+  z-index: 1;
+}
+
+.movieCard:hover ~ .movieCard {
+  transform: translateX(8rem);
+}

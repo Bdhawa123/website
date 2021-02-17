@@ -45,8 +45,8 @@ const FifthPage = () => {
           </div>
         </div>
 
-        <div className="universityProjects">
-          <div className="uniTextDes">React Project</div>
+        <div className="universityProjects xtra_spacing">
+          <div className="reactProjectDesc">React Project</div>
           <div className="horizontal_scroll">
             {React_Projects.map((Project) => {
               console.log(Project);
@@ -62,8 +62,6 @@ const FifthPage = () => {
 
         <div className="reactProjects"></div>
       </div>
-
-      <div>Fifth Page</div>
     </div>
   );
 };
