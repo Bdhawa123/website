@@ -5,6 +5,8 @@ import ThirdPage from "./Pages/ThirdPage";
 import FourthPage from "./Pages/FourthPage";
 import FifthPage from "./Pages/FifthPage";
 import SixthPage from "./Pages/SixthPage";
+import SeventhPage from "./Pages/SeventhPage";
+import EighthPage from "./Pages/EighthPage";
 
 const WebsiteComponent = () => {
   return (
@@ -12,9 +14,11 @@ const WebsiteComponent = () => {
       <MainComponent />
       <ScndPage />
       <ThirdPage />
-      <FourthPage />
+      {/* <FourthPage /> */}
       <FifthPage />
       <SixthPage />
+      <SeventhPage />
+      <EighthPage />
     </div>
   );
 };
