@@ -7,6 +7,10 @@
   font-family: "Roboto";
   min-width: 1050px;
   max-width: 1050px;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .max-width {

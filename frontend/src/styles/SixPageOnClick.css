@@ -1,0 +1,33 @@
+.classModal {
+  z-index: 1;
+  position: fixed;
+  width: 950px;
+  height: 700px;
+  top: 50px;
+  margin-left: 45px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 55px;
+  padding-top: 55px;
+  /* animation: fadein 0.5s ease-in-out; */
+}
+
+.crosSymbol {
+  width: 40px !important;
+  text-align: right;
+}
+
+.textModalTitle {
+  font-size: 40px;
+  padding-left: 75px;
+}
+
+.textModalDescription {
+  font-size: 20px;
+  text-align: center;
+}
+
+.textModalSummary {
+  font-size: 18px;
+}

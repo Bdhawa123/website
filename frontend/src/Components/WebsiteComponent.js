@@ -14,7 +14,7 @@ const WebsiteComponent = () => {
       <MainComponent />
       <ScndPage />
       <ThirdPage />
-      {/* <FourthPage /> */}
+      <FourthPage />
       <FifthPage />
       <SixthPage />
       <SeventhPage />

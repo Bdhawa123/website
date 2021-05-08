@@ -1,12 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import SixthPageOnClick from "./SixthPageOnClicked";
+import { CSSTransition } from "react-transition-group";
 import "../../styles/SixthPage.css";
 
 const movies = [
-  { titleName: "Movie 1", Description: "summary", Photo: "url" },
-  { titleName: "Movie 2", Description: "summary", Photo: "url" },
-  { titleName: "Movie 3", Description: "summary", Photo: "url" },
-  { titleName: "Movie 4", Description: "summary", Photo: "url" },
-  { titleName: "Movie 5", Description: "summary", Photo: "url" },
+  {
+    titleName: "Movie 1",
+    Description: "shortDescription",
+    Photo: "url",
+    summary: "MovieSummary",
+  },
+  {
+    titleName: "Movie 2",
+    Description: "shortDescription",
+    Photo: "url",
+    summary: "MovieSummary",
+  },
+  {
+    titleName: "Movie 3",
+    Description: "shortDescription",
+    Photo: "url",
+    summary: "MovieSummary",
+  },
+  {
+    titleName: "Movie 4",
+    Description: "shortDescription",
+    Photo: "url",
+    summary: "MovieSummary",
+  },
+  {
+    titleName: "Movie 5",
+    Description: "shortDescription",
+    Photo: "url",
+    summary: "MovieSummary",
+  },
 ];
 
 const randomColor = [
@@ -19,6 +46,19 @@ const randomColor = [
 ];
 
 const SixthPage = () => {
+  const [togglePage, setTogglePage] = useState("");
+  const [PageProps, setPageProps] = useState({});
+
+  const TogglePage = () => {
+    setTogglePage(!togglePage);
+    if (!togglePage) {
+      document.body.style.overflow = "hidden";
+      console.log("toggleTrue");
+    } else {
+      document.body.style.overflow = "scroll";
+    }
+  };
+
   return (
     <div>
       <div className="titleMoviePage">MOVIES</div>
@@ -29,6 +69,11 @@ const SixthPage = () => {
             <div
               className="movieCard"
               style={{ backgroundColor: randomColor[index] }}
+              onClick={() => {
+                TogglePage(true);
+                Object.assign(movie, { Color: randomColor[index] });
+                setPageProps(movie);
+              }}
             >
               <div className="cardTitle">{movie.titleName}</div>
               <div className="movieImage">{movie.Photo}</div>
@@ -37,6 +82,24 @@ const SixthPage = () => {
           );
         })}
       </div>
+
+      {/* {togglePage === true ? ( */}
+      <CSSTransition
+        in={togglePage}
+        timeout={300}
+        classNames="fade"
+        unmountOnExit
+      >
+        <SixthPageOnClick
+          titleName={PageProps.titleName}
+          description={PageProps.Description}
+          summary={PageProps.summary}
+          url={PageProps.Photo}
+          Color={PageProps.Color}
+          TogglePage={TogglePage}
+        />
+      </CSSTransition>
+      {/* ) : null} */}
     </div>
   );
 };
