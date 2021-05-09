@@ -45,39 +45,31 @@
 }
 
 .horizontal_scroll {
-  position: absolute;
-  width: 600px;
-  height: 870px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transform: rotate(-90deg) translateY(-600px);
-  transform-origin: right top;
-  scrollbar-width: none;
-}
-
-.horizontal_scroll::-webkit-scrollbar {
-  display: none;
-}
-
-.horizontal_scroll > div {
-  /* width: 100px; */
-  height: 290px;
-  transform: rotate(90deg);
-  transform-origin: right top;
-  margin-right: 35px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
 }
 
 .folderImg {
+  margin-top: 18px;
   height: 170px;
   width: 240px;
-  margin-left: 600px; /* should be image width * n(no of repititons)*/
+  margin-left: 42px;
+
+  /* margin-left: 600px; should be image width * n(no of repititons) */
 }
 
 .ProjectDesc {
   position: relative;
   top: -140px;
-  left: 96px;
-  margin-left: 600px;
+  margin-left: 140px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.ProjectDesc:hover {
+  transform: scale(1.25);
+  text-decoration: underline;
 }
 
 /* Second Part of the React Project !!! */
@@ -92,4 +84,26 @@
 
 .xtra_spacing {
   margin-top: 85px;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+  -webkit-transition: opacity 300ms, transform 300ms;
+  -moz-transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+  -webkit-transition: opacity 300ms, transform 300ms;
+  -moz-transition: opacity 300ms, transform 300ms;
 }

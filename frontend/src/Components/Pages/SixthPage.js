@@ -84,12 +84,7 @@ const SixthPage = () => {
       </div>
 
       {/* {togglePage === true ? ( */}
-      <CSSTransition
-        in={togglePage}
-        timeout={300}
-        classNames="fade"
-        unmountOnExit
-      >
+      <CSSTransition in={togglePage} classNames="fade" unmountOnExit>
         <SixthPageOnClick
           titleName={PageProps.titleName}
           description={PageProps.Description}
