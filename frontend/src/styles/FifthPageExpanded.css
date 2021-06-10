@@ -1,0 +1,48 @@
+.projectModal {
+  background-color: #79746d;
+  z-index: 1;
+  position: fixed;
+  width: 950px;
+  height: 650px;
+  top: 55px;
+  margin-left: 45px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.imageHolder {
+  background-color: white;
+  height: 565px;
+  width: 425px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageHolder img {
+  height: 375px;
+  width: 270px;
+  margin-top: -40px;
+}
+
+.textHolder {
+  background-color: #79746d;
+  height: 565px;
+  width: 425px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cross {
+  position: fixed;
+  margin-left: 835px;
+  margin-top: -560px;
+  cursor: pointer;
+}
