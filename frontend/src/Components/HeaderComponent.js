@@ -8,23 +8,21 @@ const HeaderComponent = () => {
   };
 
   return (
-    <BrowserRouter>
-      <div className="navBar">
-        <Switch>
+    <div className="navBar">
+      {/* <Switch>
           <Route path="/Blog" render={sayHi} />
           <Route path="/Home" render={sayHi} />
-        </Switch>
+        </Switch>  */}
 
-        <ul>
-          <Link to="/Blog">
-            <li>Blog</li>
-          </Link>
-          <Link to="/Home">
-            <li>Home</li>
-          </Link>
-        </ul>
-      </div>
-    </BrowserRouter>
+      <ul>
+        <Link to="/Blog">
+          <li>Blog</li>
+        </Link>
+        <Link to="/Home">
+          <li>Home</li>
+        </Link>
+      </ul>
+    </div>
   );
 };
 
