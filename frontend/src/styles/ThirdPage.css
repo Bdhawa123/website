@@ -1,5 +1,5 @@
 .temp {
-  margin-top: 150px;
+  margin-top: 75px;
   height: 950px;
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@
   margin-top: 25px;
   margin-left: 25px;
   height: 5px;
-  width: 1150px;
+  width: 1050px;
   background-color: #7d7373;
 }
 
@@ -61,7 +61,7 @@
   width: 5px;
   position: relative;
   top: -115px;
-  right: -65px;
+  right: -15px;
 }
 
 .content2 {

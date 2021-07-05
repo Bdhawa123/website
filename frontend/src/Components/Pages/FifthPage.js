@@ -143,7 +143,7 @@ const FifthPage = () => {
 
         <div className="reactProjects"></div>
       </div>
-      <CSSTransition in={toggle} className="fade" unmountOnExit>
+      <CSSTransition in={toggle} classNames="fade" unmountOnExit>
         <FifthPageExpanded
           selectedProject={selectedProject}
           toggle={setToggle}

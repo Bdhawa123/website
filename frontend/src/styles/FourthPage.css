@@ -1,6 +1,7 @@
 .main_container {
   position: relative;
   top: -7em;
+  left:2.75em;
 }
 
 .photo_gallery img {
