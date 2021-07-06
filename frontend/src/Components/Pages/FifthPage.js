@@ -117,7 +117,7 @@ const FifthPage = () => {
                       setSelect(Project);
                     }}
                   >
-                    <img src={folder} className="folderImg" />
+                    <img src={folder} className="folderImg" alt="folderImg" />
                     <div className="ProjectDesc">{Project.Title}</div>
                   </div>
                 );
@@ -132,8 +132,13 @@ const FifthPage = () => {
             {React_Projects.map((Project) => {
               console.log(Project);
               return (
-                <div>
-                  <img src={folder} className="folderImg" />
+                <div
+                  onClick={()=>{
+                    setToggle(!toggle);
+                    setSelect(Project);
+                  }}
+                >
+                  <img src={folder} className="folderImg" alt="folderImg" />
                   <div className="ProjectDesc">{Project.Title}</div>
                 </div>
               );

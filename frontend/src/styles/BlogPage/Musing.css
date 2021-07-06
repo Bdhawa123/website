@@ -1,0 +1,25 @@
+.musingParentdiv {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.musingContentClose {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 0px;
+  overflow: hidden;
+  transition: height, 1s linear;
+  transform: translateZ(0);
+}
+
+.musingContentOpen {
+  margin-left: 30px;
+  display: block;
+  flex-direction: column;
+  overflow: hidden;
+  transition: height, 0.5s linear;
+  transform: translateZ(0);
+  height: 250px;
+}

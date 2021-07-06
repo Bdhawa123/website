@@ -13,8 +13,6 @@ function App() {
 
   const {activePage,setCurrentPage} = useContext(BackgroundContext);
 
-  console.log(activePage)
-
   return (
     <div style={{backgroundImage:`url(${(activePage=='main')?library:mountain})`,width:'auto'}}>
     <Container>
