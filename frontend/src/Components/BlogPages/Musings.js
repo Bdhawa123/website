@@ -1,11 +1,31 @@
 import React, { useState } from "react";
 import MusingJson from "./Musing/MusingJson.json";
-import Container from "react-bootstrap/Container";
 import "../../styles/BlogPage/Musing.css";
 
+const MusingList = ({ musing }) => {
+  const [secondaryToggle, setSecondaryToggle] = useState(false);
+  return (
+    <div className="MusingContentlist">
+      <h4
+        onClick={() => {
+          setSecondaryToggle(!secondaryToggle);
+        }}
+      >
+        {musing.name}
+      </h4>
+      <div
+        className={
+          secondaryToggle ? "secondaryTitleOpen" : "secondaryTitleClose"
+        }
+      >
+        <span>{musing.paragraphs}</span>
+      </div>
+    </div>
+  );
+};
+
 const Musings = () => {
-  console.log(MusingJson);
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   return (
     <div className="musingParentdiv">
       <h3
@@ -16,18 +36,9 @@ const Musings = () => {
       >
         Musings of my Mind
       </h3>
-      <div
-        // className="musingContentClose"
-        className={toggle ? "musingContentOpen" : "musingContentClose"}
-        // style={{ display: toggle ? "flex" : "none" }}
-      >
+      <div className={toggle ? "musingContentOpen" : "musingContentClose"}>
         {MusingJson.MusingsJson.map((musing) => {
-          return (
-            <div className="MusingContentlist">
-              <div>{musing.name}</div>
-              <div>{musing.description}</div>
-            </div>
-          );
+          return <MusingList musing={musing} />;
         })}
       </div>
     </div>

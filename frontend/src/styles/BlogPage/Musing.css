@@ -4,6 +4,10 @@
   height: auto;
 }
 
+.musingTitle {
+  cursor: pointer;
+}
+
 .musingContentClose {
   margin-left: 30px;
   display: flex;
@@ -21,5 +25,17 @@
   overflow: hidden;
   transition: height, 0.5s linear;
   transform: translateZ(0);
-  height: 250px;
+  height: auto;
+}
+
+.secondaryTitleClose {
+  display: flex;
+  height: 0px;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.musingTitleOpen {
+  display: flex;
+  height: auto;
 }

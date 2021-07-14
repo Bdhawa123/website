@@ -1,6 +1,6 @@
 import React from "react";
 import Musings from "./BlogPages/Musings";
-import TechnGadjets from "./BlogPages/TechnGadjets";
+import Code from "./BlogPages/Code";
 import Container from "react-bootstrap/Container";
 import Economics from "./BlogPages/Economics";
 import "../styles/BlogPage/BlogComponent.css";
@@ -10,7 +10,7 @@ const BlogComponent = () => {
       <div className="mainBlogPg">
         <Musings />
         <Economics />
-        {/* <TechnGadjets /> */}
+        <Code />
       </div>
     </Container>
   );
