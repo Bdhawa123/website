@@ -25,7 +25,7 @@ const MusingList = ({ musing }) => {
 };
 
 const Musings = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   return (
     <div className="musingParentdiv">
       <h3

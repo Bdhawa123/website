@@ -16,6 +16,16 @@
 .crosSymbol {
   width: 40px !important;
   text-align: right;
+  cursor: pointer;
+}
+
+.modalImg {
+  float: left;
+  margin-right: 35px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  width: 175px;
+  height: 255px;
 }
 
 .textModalTitle {
@@ -24,10 +34,25 @@
 }
 
 .textModalDescription {
-  font-size: 20px;
-  text-align: center;
+}
+.modalBody {
+  float: right;
+  height: 550px;
+  overflow-y: scroll;
+}
+
+.modalBody::-webkit-scrollbar {
+  display: none;
 }
 
 .textModalSummary {
-  font-size: 18px;
+  font-size: 15px;
+  text-align: justify;
+  margin-right: 25px;
+  height: 250px;
+}
+
+.summaryParagraphs {
+  margin-bottom: 25px;
+  text-indent: 50px;
 }

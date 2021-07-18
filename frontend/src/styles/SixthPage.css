@@ -30,6 +30,38 @@
   transition: all 0.5s;
   box-shadow: 4px 4px 15px 2px rgba(#0000, 0.75);
   z-index: 0;
+  color: white;
+}
+
+.cardTitle {
+  font-size: 22px;
+  /* margin-top: -15px; */
+  height: 75px;
+}
+.cardImg {
+  vertical-align: middle;
+  border-style: none;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cardImg img {
+  width: 175px;
+  height: 225px;
+}
+
+.description {
+  text-align: justify;
+  height: 185px;
+  overflow-y: scroll;
+  font-size: 13px;
+}
+
+.description::-webkit-scrollbar {
+  display: none;
 }
 
 .movieCard:not(:first-child) {
@@ -52,9 +84,9 @@
 .fade-enter-active {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity 300ms, transform 300ms;
-  -webkit-transition: opacity 300ms, transform 300ms;
-  -moz-transition: opacity 300ms, transform 300ms;
+  transition: opacity 500ms, transform 500ms;
+  -webkit-transition: opacity 500ms, transform 500ms;
+  -moz-transition: opacity 500ms, transform 500ms;
 }
 .fade-exit {
   opacity: 1;
@@ -62,7 +94,7 @@
 .fade-exit-active {
   opacity: 0;
   transform: scale(0.9);
-  transition: opacity 300ms, transform 300ms;
-  -webkit-transition: opacity 300ms, transform 300ms;
-  -moz-transition: opacity 300ms, transform 300ms;
+  transition: opacity 500ms, transform 500ms;
+  -webkit-transition: opacity 500ms, transform 500ms;
+  -moz-transition: opacity 500ms, transform 500ms;
 }

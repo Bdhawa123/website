@@ -12,7 +12,7 @@
   margin-left: 30px;
   display: flex;
   flex-direction: column;
-  height: 0px;
+  height: 250px;
   overflow: hidden;
   transition: height, 1s linear;
   transform: translateZ(0);
