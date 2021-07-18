@@ -27,8 +27,8 @@
 }
 
 .imageHolder img {
-  height: 375px;
-  width: 270px;
+  height: 300px;
+  width: 375px;
   margin-top: -40px;
 }
 
@@ -38,6 +38,7 @@
   width: 425px;
   display: flex;
   flex-direction: column;
+  padding-left: 25px;
 }
 
 .cross {
@@ -45,4 +46,33 @@
   margin-left: 835px;
   margin-top: -560px;
   cursor: pointer;
+}
+
+.projectName {
+  display: flex;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 23px;
+  cursor: pointer;
+  height: 40px;
+}
+
+.projectName:hover {
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.shortDescription {
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+
+.Description {
+  display: flex;
+  height: 200px;
+  font-size: 16px;
+  align-items: center;
 }

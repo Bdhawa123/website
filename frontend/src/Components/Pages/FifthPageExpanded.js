@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/FifthPageExpanded.css";
 import temp from "../../images/tmPlaceholder.jpg";
 import cross from "../../images/cancel_white.svg";
+import { Carousel } from "react-bootstrap";
+
+const Slides = ({ images }) => {
+  return (
+    <Carousel variant="dark">
+      {images.map((image) => {
+        return (
+          <Carousel.Item>
+            <img src={image} />
+          </Carousel.Item>
+        );
+      })}
+    </Carousel>
+  );
+};
 
 const FifthPageExpanded = ({ selectedProject, toggle }) => {
   return (
@@ -15,10 +30,19 @@ const FifthPageExpanded = ({ selectedProject, toggle }) => {
         <img src={cross} style={{ width: "30px" }} />
       </div>
       <div className="imageHolder">
-        <img src={temp} />
+        {selectedProject.imgLink != null ? (
+          <Slides images={selectedProject.imgLink} />
+        ) : null}
       </div>
       <div className="textHolder">
-        <div className="projectName">{selectedProject.Title}</div>
+        <div
+          className="projectName"
+          onClick={() => {
+            window.open(selectedProject.gitRepo);
+          }}
+        >
+          {selectedProject.Title}
+        </div>
         <div className="shortDescription">
           {selectedProject.shortDescription}
         </div>

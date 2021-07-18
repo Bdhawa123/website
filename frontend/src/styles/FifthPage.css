@@ -77,13 +77,14 @@
 .ProjectDesc {
   position: relative;
   top: -140px;
-  margin-left: 140px;
+  margin-left: 75px;
+  padding-left: 50px;
   cursor: pointer;
   transition: all 0.5s;
 }
 
 .ProjectDesc:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
   text-decoration: underline;
 }
 
