@@ -8,12 +8,18 @@ const MainComponent = () => {
   return (
     <Container>
       <div className="welcome_content">
-        <img src={mainlogo} />
+        <img src={mainlogo} alt="mainlogo" />
         <div>Welcome to my Website !!!</div>
       </div>
 
       <div className="downBtn">
-        <img src={down} />
+        <img
+          src={down}
+          alt="downimage"
+          onClick={() => {
+            window.scroll(0, 780);
+          }}
+        />
       </div>
     </Container>
   );

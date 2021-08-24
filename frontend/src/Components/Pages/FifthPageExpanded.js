@@ -47,7 +47,7 @@ const FifthPageExpanded = ({ selectedProject, toggle }) => {
           {selectedProject.shortDescription}
         </div>
         <div className="Description">{selectedProject.Description}</div>
-        <div>{selectedProject.link}</div>
+        <div className="language">LANGUAGES:{selectedProject.languages}</div>
       </div>
     </div>
   );

@@ -32,7 +32,10 @@ const ScndPage = () => {
   return (
     <div className="backgrnd">
       <div className="leftContainer">
-        <div className="textContainer">Some Word Things</div>
+        <div className="textContainer">
+          To Build a Better Tommorow, We Must See The Mistakes We Made Yesterday
+          And Strive Towards Betterment Today.
+        </div>
         <div className="imgDiv">
           <img src={profile_pic} />
         </div>

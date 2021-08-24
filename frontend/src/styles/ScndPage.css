@@ -39,6 +39,9 @@
   border-radius: 61px;
   justify-content: center;
   color: white !important;
+  align-items: center;
+  font-size: 28px;
+  padding: 60px;
 }
 
 .navColumn {

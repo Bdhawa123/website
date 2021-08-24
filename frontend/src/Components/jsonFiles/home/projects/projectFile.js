@@ -58,15 +58,6 @@ const projectFile = [
     languages: "PHP, JavaScript, Nectar Cloud",
     gitRepo: "https://github.com/Bdhawa123/SEPAB-34",
   },
-  {
-    Title: "FishTail",
-    imgLink: null,
-    shortDescription: "Inventory management application",
-    Description:
-      "Database management system using simplified UI for managing Sales and Inventory",
-    languages: "React,JavaScipt,Bootstrap, Reactstrap,flexbox",
-    gitRepo: "https://github.com/Bdhawa123/FishTail",
-  },
 ];
 
 export default projectFile;

@@ -4,96 +4,7 @@ import "./../../styles/FifthPage.css";
 import FifthPageExpanded from "./FifthPageExpanded";
 import { CSSTransition } from "react-transition-group";
 import projectFile from "../jsonFiles/home/projects/projectFile";
-
-// const University_Project = [
-//   {
-//     Title: "Software Development",
-//     shortDescription: "shortDescription",
-//     Description: "Description",
-//     link: "Link",
-//   },
-//   {
-//     Title: "Title 1",
-//     shortDescription: "shortDescription",
-//     Description: "Description",
-//     link: "Link",
-//   },
-//   {
-//     Title: "Title 2",
-//     shortDescription: "shortDescription",
-//     Description: "Description",
-//     link: "Link",
-//   },
-//   {
-//     Title: "Title 3",
-//     shortDescription: "shortDescription",
-//     Description: "Description",
-//     link: "Link",
-//   },
-//   {
-//     Title: "Title 4",
-//     shortDescription: "shortDescription",
-//     Description: "Description",
-//     link: "Link",
-//   },
-//   {
-//     Title: "Title 5",
-//     shortDescription: "shortDescription",
-//     Description: "Description",
-//     link: "Link",
-//   },
-//   {
-//     Title: "Title 6",
-//     shortDescription: "shortDescription",
-//     Description: "Description",
-//     link: "Link",
-//   },
-// ];
-
-const React_Projects = [
-  {
-    Title: "React Project",
-    shortDescription: "shortDescription",
-    Description: "Description",
-    link: "Link",
-  },
-  {
-    Title: "Title 1",
-    shortDescription: "shortDescription",
-    Description: "Description",
-    link: "Link",
-  },
-  {
-    Title: "Title 2",
-    shortDescription: "shortDescription",
-    Description: "Description",
-    link: "Link",
-  },
-  {
-    Title: "Title 3",
-    shortDescription: "shortDescription",
-    Description: "Description",
-    link: "Link",
-  },
-  {
-    Title: "Title 4",
-    shortDescription: "shortDescription",
-    Description: "Description",
-    link: "Link",
-  },
-  {
-    Title: "Title 5",
-    shortDescription: "shortDescription",
-    Description: "Description",
-    link: "Link",
-  },
-  {
-    Title: "Title 6",
-    shortDescription: "shortDescription",
-    Description: "Description",
-    link: "Link",
-  },
-];
+import reactProjectFile from "../jsonFiles/home/projects/reactProject";
 const FifthPage = () => {
   const [toggle, setToggle] = useState(false);
   const [selectedProject, setSelect] = useState("");
@@ -126,24 +37,24 @@ const FifthPage = () => {
 
         <div className="universityProjects xtra_spacing">
           <div className="reactProjectDesc">React Project</div>
-          <div className="horizontal_scroll">
-            {React_Projects.map((Project) => {
-              return (
-                <div
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setSelect(Project);
-                  }}
-                >
-                  <img src={folder} className="folderImg" alt="folderImg" />
-                  <div className="ProjectDesc">{Project.Title}</div>
-                </div>
-              );
-            })}
+          <div className="wrapper">
+            <div className="horizontal_scroll">
+              {reactProjectFile.map((Project) => {
+                return (
+                  <div
+                    onClick={() => {
+                      setToggle(!toggle);
+                      setSelect(Project);
+                    }}
+                  >
+                    <img src={folder} className="folderImg" alt="folderImg" />
+                    <div className="ProjectDesc">{Project.Title}</div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
-
-        <div className="reactProjects"></div>
       </div>
       <CSSTransition in={toggle} classNames="fade" unmountOnExit>
         <FifthPageExpanded
