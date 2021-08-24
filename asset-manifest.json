@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/website/frontend/static/css/main.7857cc9e.chunk.css",
+    "main.js": "/website/frontend/static/js/main.fb198129.chunk.js",
+    "main.js.map": "/website/frontend/static/js/main.fb198129.chunk.js.map",
+    "runtime-main.js": "/website/frontend/static/js/runtime-main.6e6faa06.js",
+    "runtime-main.js.map": "/website/frontend/static/js/runtime-main.6e6faa06.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/website/frontend/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.12619880.chunk.js": "/website/frontend/static/js/2.12619880.chunk.js",
+    "static/js/2.12619880.chunk.js.map": "/website/frontend/static/js/2.12619880.chunk.js.map",
+    "static/js/3.b486184e.chunk.js": "/website/frontend/static/js/3.b486184e.chunk.js",
+    "static/js/3.b486184e.chunk.js.map": "/website/frontend/static/js/3.b486184e.chunk.js.map",
+    "index.html": "/website/frontend/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/website/frontend/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.7857cc9e.chunk.css.map": "/website/frontend/static/css/main.7857cc9e.chunk.css.map",
+    "static/js/2.12619880.chunk.js.LICENSE.txt": "/website/frontend/static/js/2.12619880.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/website/frontend/static/media/Roboto_Mono.04a99664.ttf",
+    "static/media/FifthPage.css": "/website/frontend/static/media/background.15e273ff.jpg",
+    "static/media/ScndPage.css": "/website/frontend/static/media/sunsetBack.c8f34878.png",
+    "static/media/cancel_white.d3ea21e7.svg": "/website/frontend/static/media/cancel_white.d3ea21e7.svg",
+    "static/media/EighthPage.css": "/website/frontend/static/media/firework_ny 1.005cdcd0.png",
+    "static/media/folder.20079ee3.jpg": "/website/frontend/static/media/folder.20079ee3.jpg",
+    "static/media/library.d04a16f9.jpg": "/website/frontend/static/media/library.d04a16f9.jpg",
+    "static/media/logo_code.21d0f1c5.png": "/website/frontend/static/media/logo_code.21d0f1c5.png",
+    "static/media/mountain.2ba9b097.jpg": "/website/frontend/static/media/mountain.2ba9b097.jpg",
+    "static/media/profile_pic.d554816a.png": "/website/frontend/static/media/profile_pic.d554816a.png",
+    "static/media/site_logo.3fae4158.png": "/website/frontend/static/media/site_logo.3fae4158.png",
+    "static/media/swinburne_logo.0195d2d7.png": "/website/frontend/static/media/swinburne_logo.0195d2d7.png",
+    "static/media/tmPlaceholder.23776c00.jpg": "/website/frontend/static/media/tmPlaceholder.23776c00.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e6faa06.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.12619880.chunk.js",
+    "static/css/main.7857cc9e.chunk.css",
+    "static/js/main.fb198129.chunk.js"
+  ]
+}
